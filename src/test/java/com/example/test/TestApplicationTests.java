@@ -1,5 +1,6 @@
 package com.example.test;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.test.bean.UserBean;
 import com.example.test.service.UserService;
 import org.elasticsearch.common.geo.GeoDistance;
@@ -10,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.*;
@@ -20,6 +22,18 @@ public class TestApplicationTests {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
+
+
+    @Test
+    public void redisTest(){
+        System.out.println(JSONObject.toJSON(redisTemplate.opsForValue().get("wechat_personal_auth_open_id:oXNSQ5S0uDBAQgUddRUAbjgEFh74")));
+    }
+
+
 
     @Test
     public void contextLoads() {

@@ -13,6 +13,18 @@ spring:
      user:
       name: admin
       password: 123
+  redis:
+    database: 12
+    host: 139.129.221.195
+    password: h?4Td:9Bo*0D
+    port: 6379
+    timeout: 9000
+    pool:
+      max-idle: 8
+      min-idle: 1
+      max-active: 8
+      max-wait: -1
+
 
 ##微信支付信息配置
 #weixin:
