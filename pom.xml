@@ -135,7 +135,11 @@
             <artifactId>hutool-all</artifactId>
             <version>5.1.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.10.97.ALL</version>
+        </dependency>
     </dependencies>
 
     <build>
