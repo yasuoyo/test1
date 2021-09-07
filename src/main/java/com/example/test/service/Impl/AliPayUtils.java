@@ -1,6 +1,5 @@
-package com.example.test.serviceImpl;
+package com.example.test.service.Impl;
 
-import cn.hutool.core.math.MathUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -23,8 +22,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
-
 /**
  * @program: test1
  * @description:
@@ -35,8 +32,8 @@ import java.math.BigDecimal;
 @Service
 public class AliPayUtils {
 
-    @Autowired
-    @Qualifier("alipayClient")
+//    @Autowired
+//    @Qualifier("alipayClient")
     private AlipayClient alipayClient;
 
     /**

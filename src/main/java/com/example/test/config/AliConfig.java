@@ -21,11 +21,11 @@ import java.io.InputStream;
 @Configuration
 public class AliConfig {
 
-    @Value("${custom.http.proxyHost}")
+    @Value("${custom.http.proxyHost:111}")
     private String proxyHost;
-    @Value("${custom.http.proxyPort}")
+    @Value("${custom.http.proxyPort:111}")
     private int proxyPort;
-    @Value("${spring.profiles.active}")
+    @Value("${spring.profiles.active:111}")
     private String activeEnv;
 
     @Autowired

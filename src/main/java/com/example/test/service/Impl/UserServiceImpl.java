@@ -1,4 +1,4 @@
-package com.example.test.serviceImpl;
+package com.example.test.service.Impl;
 
 import com.example.test.bean.UserBean;
 import com.example.test.mapper.UserMapper;

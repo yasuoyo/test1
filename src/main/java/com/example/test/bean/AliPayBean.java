@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @create: 2021-08-12 14:27
  **/
 @Component
-@PropertySource("classpath:/production/alipay.properties")
+//@PropertySource("classpath:/production/alipay.properties")
 @ConfigurationProperties(prefix = "alipay")
 @Data
 public class AliPayBean {

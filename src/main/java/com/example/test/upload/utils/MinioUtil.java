@@ -26,19 +26,19 @@ public class MinioUtil {
 	private static String minioPass;
 	private static String bucketName;
 
-	@Value(value = "${upload.minio.minio_url}")
+	@Value(value = "${upload.minio.minio_url:111}")
 	public void setMinioUrl(String minioUrl) {
 		MinioUtil.minioUrl = minioUrl;
 	}
-	@Value(value = "${upload.minio.minio_name}")
+	@Value(value = "${upload.minio.minio_name:111}")
 	public void setMinioName(String minioName) {
 		MinioUtil.minioName = minioName;
 	}
-	@Value(value = "${upload.minio.minio_pass}")
+	@Value(value = "${upload.minio.minio_pass:111}")
 	public void setMinioPass(String minioPass) {
 		MinioUtil.minioPass = minioPass;
 	}
-	@Value(value = "${upload.minio.bucketName}")
+	@Value(value = "${upload.minio.bucketName:111}")
 	public void setBucketName(String bucketName) {
 		MinioUtil.bucketName = bucketName;
 	}

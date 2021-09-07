@@ -37,19 +37,19 @@ public class OssBootUtil{
     private static String bucketName;
     private static String staticDomain;
 
-	@Value(value = "${upload.oss.endpoint}")
+	@Value(value = "${upload.oss.endpoint:111}")
 	public void setEndPoint(String endPoint) {
 		OssBootUtil.endPoint = endPoint;
 	}
-	@Value(value = "${upload.oss.accessKey}")
+	@Value(value = "${upload.oss.accessKey:111}")
 	public void setAccessKeyId(String accessKeyId) {
 		OssBootUtil.accessKeyId = accessKeyId;
 	}
-	@Value(value = "${upload.oss.secretKey}")
+	@Value(value = "${upload.oss.secretKey:111}")
 	public void setAccessKeySecret(String accessKeySecret) {
 		OssBootUtil.accessKeySecret = accessKeySecret;
 	}
-	@Value(value = "${upload.oss.bucketName}")
+	@Value(value = "${upload.oss.bucketName:111}")
 	public void setBucketName(String bucketName) {
 		OssBootUtil.bucketName = bucketName;
 	}

@@ -22,17 +22,16 @@ import org.springframework.web.multipart.MultipartFile;
 public class SysBaseApiImpl implements ISysBaseAPI {
 	/** 当前系统数据库类型 */
 	private static String DB_TYPE = "";
-
 	/**
 	 * minio桶名称
 	 */
 	private static String miniBucketName;
-	@Value(value = "${upload.minio.bucketName}")
+	@Value(value = "${upload.minio.bucketName:111}")
 	public void setMiniBucketName(String miniBucketName) {
 		SysBaseApiImpl.miniBucketName = miniBucketName;
 	}
 	private static String ossBucketName;
-	@Value(value = "${upload.oss.bucketName}")
+	@Value(value = "${upload.oss.bucketName:111}")
 	public void setOssBucketName(String ossBucketName) {
 		SysBaseApiImpl.ossBucketName = ossBucketName;
 	}

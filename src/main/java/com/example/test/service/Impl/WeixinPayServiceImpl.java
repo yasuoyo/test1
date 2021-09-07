@@ -1,4 +1,4 @@
-package com.example.test.serviceImpl;
+package com.example.test.service.Impl;
 
 import com.example.test.utils.HttpClient;
 import com.example.test.service.WeixinPayService;
@@ -21,16 +21,16 @@ import java.util.Map;
 @Service
 public class WeixinPayServiceImpl implements WeixinPayService {
     //应用ID
-    @Value("${weixin.appid}")
+    @Value("${weixin.appid:111}")
     private String appid;
     //商户号
-    @Value("${weixin.partner}")
+    @Value("${weixin.partner:111}")
     private String partner;
     //密钥
-    @Value("${weixin.partnerkey}")
+    @Value("${weixin.partnerkey:111}")
     private String partnerkey;
     //通知地址
-    @Value("${weixin.notifyurl}")
+    @Value("${weixin.notifyurl:111}")
     private String notifyurl;
 
     /**
