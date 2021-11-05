@@ -16,7 +16,7 @@ public class AdminTestController {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
-    @RequestMapping("/home")
+    @GetMapping("/home")
     @ResponseBody
     public String productInfo() {
         return " admin home page ";

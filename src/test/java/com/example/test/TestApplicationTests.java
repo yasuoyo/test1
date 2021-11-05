@@ -1,5 +1,6 @@
 package com.example.test;
 
+import cn.hutool.core.util.NumberUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.example.test.bean.UserBean;
 import com.example.test.service.UserService;
@@ -127,6 +128,7 @@ public class TestApplicationTests {
       list.add("1");
       list.add("2");
       String[] strArray = new String[list.size()];
+        NumberUtil.div()
       System.out.println(Arrays.toString(list.toArray(strArray)));
     }
 
